@@ -17,8 +17,6 @@ const UserContext = createContext({
     setLoaded: () => Promise,
     signinUser: "",
     setSigninUser: () => Promise,
-    userShortenUrl: [],
-    setUserShortenUrl: () => Promise,
     result: "",
     setResult: () => Promise,
     gender: "",
@@ -33,7 +31,6 @@ export default function UsersContextProvider({ children }) {
     const [input, setInput] = useState(null);
     const [loaded, setLoaded] = useState("");
     const [signinUser, setSigninUser] = useState("");
-    const [userShortenUrl, setUserShortenUrl] = useState([]);
     const [result, setResult] = useState("");
     const [gender, setGender] = useState("");
 
